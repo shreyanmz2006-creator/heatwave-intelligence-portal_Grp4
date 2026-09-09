@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Sources and Stakeholders</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-wrapper {
+            display: flex;
+            min-height: 80vh;
+        }
+        aside.sidebar {
+            width: 220px;
+            flex-shrink: 0;
+            background: #fff8e1;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+            padding: 16px;
+            margin: 20px;
+        }
+        aside.sidebar h2 { margin-top: 0; font-size: 18px; }
+        aside.sidebar ul { list-style: none; padding-left: 0; }
+        aside.sidebar li {
+            padding: 8px 6px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+        }
+        aside.sidebar li:hover { background-color: #ffe0b2; }
+
+        main.content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header style="background-color:#ffe0b2; padding:20px; text-align:center;">
+    <h1>Data Sources and Stakeholders</h1>
+</header>
+
+<div class="page-wrapper">
+
+    <aside class="sidebar">
+        <h2>Data Sources</h2>
+        <ul>
+            <li>AWS Sensors</li>
+            <li>IMD Database</li>
+            <li>Satellite Feeds</li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <h2>Forecast and Alert Workflow</h2>
+        <ol>
+            <li>Collect temperature data</li>
+            <li>Analyse heatwave conditions</li>
+            <li>Prepare forecast</li>
+            <li>Send heatwave alerts</li>
+        </ol>
+
+        <h2>Stakeholders and Actions</h2>
+        <ul>
+            <li>Meteorologists
+                <ul>
+                    <li>Analyse temperature data</li>
+                    <li>Prepare forecasts</li>
+                </ul>
+            </li>
+            <li>Disaster Management Officers
+                <ul>
+                    <li>Issue warnings</li>
+                    <li>Plan emergency response</li>
+                </ul>
+            </li>
+            <li>Citizens
+                <ul>
+                    <li>View alerts</li>
+                    <li>Follow safety advice</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Abbreviations</h2>
+        <dl>
+            <dt>AWS</dt>
+            <dd>Automatic Weather Station</dd>
+            <dt>IMD</dt>
+            <dd>India Meteorological Department</dd>
+            <dt>HW</dt>
+            <dd>Heatwave</dd>
+            <dt>SHW</dt>
+            <dd>Severe Heatwave</dd>
+        </dl>
+    </main>
+
+</div>
+
+<footer>&copy; 2026 Heatwave Intelligence System</footer>
+
+</body>
+</html>

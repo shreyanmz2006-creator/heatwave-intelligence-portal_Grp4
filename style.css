@@ -1,0 +1,20 @@
+/* style.css - sitewide theme */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #fdf6f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #d84315;
+}
+
+footer {
+  background-color: #263238;
+  color: #fff;
+  text-align: center;
+  padding: 14px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}

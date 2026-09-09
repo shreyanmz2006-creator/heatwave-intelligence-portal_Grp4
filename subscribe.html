@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Subscribe - Heatwave Intelligence System</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body { margin: 40px; color: #000; }
+  h1 { color: #c5da0bde; }
+  label { display: block; margin-top: 12px; }
+  .inline-option { margin-right: 16px; }
+
+  form {
+      max-width: 500px;
+      margin: 0 auto;
+  }
+  fieldset {
+      border: 1px solid #d84315;
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 20px;
+  }
+  legend {
+      font-weight: bold;
+      color: #d84315;
+      padding: 0 8px;
+  }
+  input[type="text"], input[type="email"], input[type="tel"], select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      margin-top: 4px;
+  }
+  input:focus, select:focus {
+      outline: none;
+      border-color: #d84315;
+      box-shadow: 0 0 4px rgba(216,67,21,0.5);
+  }
+  button {
+      padding: 10px 20px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      margin-top: 16px;
+      margin-right: 10px;
+  }
+  button[type="submit"] {
+      background-color: #d84315;
+      color: #fff;
+  }
+  button[type="submit"]:hover {
+      background-color: #a8340f;
+  }
+  button[type="reset"] {
+      background-color: #ccc;
+  }
+  button[type="reset"]:hover {
+      background-color: #aaa;
+  }
+</style>
+</head>
+<body>
+
+<h1>Heatwave Intelligence System</h1>
+<p>Heatwave Advisory Subscription</p>
+
+<form action="#" method="post">
+
+  <fieldset>
+    <legend>Personal Details</legend>
+    <label for="cname">Full Name</label>
+    <input type="text" id="cname" name="cname" placeholder="Enter your full name" required>
+
+    <label for="cemail">Email Address</label>
+    <input type="email" id="cemail" name="cemail" placeholder="you@example.com" required>
+
+    <label for="cmobile">Mobile Number</label>
+    <input type="tel" id="cmobile" name="cmobile" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+  </fieldset>
+
+  <fieldset>
+    <legend>Region</legend>
+    <label for="region">Select your region</label>
+    <select id="region" name="region" required>
+      <option value="">-- Choose Region --</option>
+      <option value="north">North Zone</option>
+      <option value="central">Central Zone</option>
+      <option value="konkan">Konkan Zone</option>
+      <option value="vidarbha">Vidarbha Zone</option>
+      <option value="marathwada">Marathwada Zone</option>
+    </select>
+  </fieldset>
+
+  <fieldset>
+    <legend>Preferred Alert Language</legend>
+    <span class="inline-option"><input type="radio" id="lang-en" name="language" value="english" checked> <label style="display:inline;" for="lang-en">English</label></span>
+    <span class="inline-option"><input type="radio" id="lang-hi" name="language" value="hindi"> <label style="display:inline;" for="lang-hi">Hindi</label></span>
+    <span class="inline-option"><input type="radio" id="lang-mr" name="language" value="marathi"> <label style="display:inline;" for="lang-mr">Marathi</label></span>
+  </fieldset>
+
+  <fieldset>
+    <legend>Alert Types to Receive</legend>
+    <span class="inline-option"><input type="checkbox" id="alert-sms" name="alerttype" value="sms" checked> <label style="display:inline;" for="alert-sms">SMS</label></span>
+    <span class="inline-option"><input type="checkbox" id="alert-email" name="alerttype" value="email"> <label style="display:inline;" for="alert-email">Email</label></span>
+    <span class="inline-option"><input type="checkbox" id="alert-app" name="alerttype" value="app"> <label style="display:inline;" for="alert-app">App Notification</label></span>
+  </fieldset>
+
+  <p>
+    <button type="submit">Subscribe</button>
+    <button type="reset">Reset</button>
+  </p>
+
+</form>
+
+<footer>&copy; 2026 Heatwave Intelligence System</footer>
+
+</body>
+</html>

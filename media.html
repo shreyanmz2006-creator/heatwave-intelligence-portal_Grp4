@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heatwave Media & Awareness Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { padding: 20px; }
+        h2 { margin-top: 30px; }
+        video, audio { display: block; margin: 10px 0; }
+        iframe { border: 1px solid #ccc; border-radius: 6px; margin: 10px 0; }
+        hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>Heatwave Awareness - Media Center</h1>
+    <hr>
+    <h2>Heatwave Awareness Video</h2>
+    <video width="640" height="360" controls>
+        <source src="heatwave_awareness.mp4" type="video/mp4">
+        <source src="heatwave_awareness.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <hr>
+
+    <h2>Heatwave Advisory - Audio Announcement</h2>
+    <audio controls>
+        <source src="heatwave_advisory.mp3" type="audio/mpeg">
+        <source src="heatwave_advisory.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <h2>Location Map</h2>
+    <iframe
+        src="https://www.google.com/maps?q=New+Delhi&output=embed"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+    <h2>IMD Website (Embedded)</h2>
+    <iframe
+        src="https://mausam.imd.gov.in/mumbai/#."
+        width="800"
+        height="500"
+        title="IMD Website">
+    </iframe>
+
+    <hr>
+
+    <noscript>
+        <p style="color:red; font-weight:bold;">
+            JavaScript is disabled in your browser. Some interactive
+            features of this Heatwave Awareness Portal may not work
+            correctly. Please enable JavaScript for the best experience.
+        </p>
+    </noscript>
+
+</body>
+</html>

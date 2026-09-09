@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Heatwave Intelligence System - Forecast Summary</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 30px auto;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 10px 14px;
+            text-align: center;
+        }
+        thead th {
+            background-color: #ffccbc;
+        }
+        tfoot td {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+        caption {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tbody tr:hover {
+    background-color: #ffe0b2;
+}
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align:center; color:#d84315;">Region-wise Temperature & Forecast Results</h1>
+
+    <table>
+        <caption>Heatwave Forecast Summary - Week of 27 July 2026</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Region</th>
+                <th rowspan="2">Station</th>
+                <th colspan="2">Forecast</th>
+            </tr>
+            <tr>
+                <th>Max Temperature</th>
+                <th>Severity Level</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>North Zone</td>
+                <td>Delhi AWS</td>
+                <td>46&deg;C</td>
+                <td>Severe Heatwave</td>
+            </tr>
+            <tr>
+                <td>Central Zone</td>
+                <td>Nagpur AWS</td>
+                <td>44&deg;C</td>
+                <td>Heatwave</td>
+            </tr>
+            <tr>
+                <td>Western Zone</td>
+                <td>Rajkot AWS</td>
+                <td>45&deg;C</td>
+                <td>Severe Heatwave</td>
+            </tr>
+            <tr>
+                <td>Coastal Zone</td>
+                <td>Chennai AWS</td>
+                <td>37&deg;C</td>
+                <td>Normal</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Highest Recorded</td>
+                <td>46&deg;C</td>
+                <td>Severe Heatwave</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
